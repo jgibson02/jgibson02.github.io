@@ -3,26 +3,6 @@
 	src: url('fonts/leaguespartan-bold.ttf');
 }
 
-@media only screen and (max-width: 900px) {
-	
-	.leftWrapper {
-		display:block;
-		float: none;
-	}
-	
-	#AboutMe {
-		position: relative;
-		display: block;
-	}
-	
-	#calendar {
-		display: none;
-		padding: 40px;
-		font-family: Lato;
-		margin: 0 auto;
-	}
-}
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -146,7 +126,7 @@ hr {
 	font-size: 14px;
 	font-weight: 500;
 	color: rgb(119, 119, 119);
-	margin-top: 13px;
+	margin-top: 4%;
 	margin-bottom: 13px;
 }
 
@@ -241,4 +221,26 @@ hr {
 	background-color: #F5FFD2;
 	color: #669900;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.leftWrapper {
+		display:block;
+		float: none;
+		width: 100%;
+	}
+	
+	#AboutMe {
+		position: relative;
+		display: block;
+	}
+	
+	#calendar {
+		display: none;
+		padding: 40px;
+		font-family: Lato;
+		margin: 0 auto;
+		position: inherit;
+	}
 }
