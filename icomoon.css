@@ -24,25 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail {
+.icon-mail:before {
   content: "\e900";
 }
-.icon-location {
+.icon-location:before {
   content: "\e901";
 }
-.icon-map {
+.icon-map:before {
   content: "\e901";
 }
-.icon-phone {
+.icon-phone:before {
   content: "\e942";
 }
-.icon-link {
+.icon-link:before {
   content: "\e9cb";
 }
-.icon-github {
+.icon-github:before {
   content: "\eab0";
 }
-.icon-linkedin {
+.icon-linkedin:before {
   content: "\eac9";
 }
-

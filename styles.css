@@ -3,6 +3,45 @@
 	src: url('fonts/leaguespartan-bold.ttf');
 }
 
+@media only screen and (max-width: 900px) {
+	
+	.leftWrapper {
+		display:block;
+		float: none;
+	}
+	
+	#AboutMe {
+		position: relative;
+		display: block;
+	}
+	
+	#calendar {
+		display: none;
+		padding: 40px;
+		font-family: Lato;
+		margin: 0 auto;
+	}
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -166,8 +205,18 @@ hr {
     color: #454545;
 }
 
+.link-github:hover {
+	text-decoration: none;
+	color: #2b2b2b;
+}
+
 .link-linkedin {
     color: #007bb6;
+}
+
+.link-linkedin:hover {
+	text-decoration: none;
+	color: #005983;
 }
 
 #calendar {
