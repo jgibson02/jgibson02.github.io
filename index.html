@@ -14,45 +14,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-	
-	<script type='text/javascript' src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
-	<script type='text/javascript' src="lib/moment/moment.js"></script>
-	<script type='text/javascript' src="lib/fullcalendar/dist/fullcalendar.js"></script>
-	<script type='text/javascript' src="lib/fullcalendar/dist/gcal.js"></script>
-	
-	
-	<script type='text/javascript'>
-		$(document).ready(function() {
-	
-	    $('#calendar').fullCalendar({
-        	// put your options and callbacks here
-	        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-	        eventSources: [
-         		{
-         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-         		},
-         		{
-	         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-	         		color: '#fbd75b',
-	         		textColor: '#666666'
-         		}
-        	],
-        	backgroundColor: '#444444',
-	        editable: false, // Don't allow editing of events
-			defaultView: 'agendaWeek', // Only show week view
-			contentHeight: 'auto',
-			minTime: '8:00:00', // Start time for the calendar
-			maxTime: '23:00:00', // End time for the calendar
-			columnFormat: {
-			    week: 'ddd' // Only show day of the week names
-			},
-			displayEventTime: true, // Display event time
-	    })
-	
-		});
-	</script>
-	
 </head>
 
 <body>
@@ -73,7 +34,7 @@
 		<section class="contact-details card card-wrapper">
 			<div class="detail">
 				<span class="detail-icon">
-					<i class="detail-icon icon-location""></i>
+					<i class="detail-icon icon-location"></i>
 				</span>
 				<span class="detail-info">
 					325 E 2nd St., 1914 Luzerne Hall, Bloomsburg, PA 17815, United States
@@ -134,6 +95,43 @@
 		<a id="contact" class="threeButtons card">CONTACT</a>
 	</div>
 	//-->
+	
+	<script type='text/javascript' src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
+	<script type='text/javascript' src="lib/moment/moment.js"></script>
+	<script type='text/javascript' src="lib/fullcalendar/dist/fullcalendar.js"></script>
+	<script type='text/javascript' src="lib/fullcalendar/dist/gcal.js"></script>
+	
+	<script type='text/javascript'>
+		$(document).ready(function() {
+	
+	    $('#calendar').fullCalendar({
+        	// put your options and callbacks here
+	        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+	        eventSources: [
+         		{
+         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+         		},
+         		{
+	         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+	         		color: '#fbd75b',
+	         		textColor: '#666666'
+         		}
+        	],
+        	backgroundColor: '#444444',
+	        editable: false, // Don't allow editing of events
+			defaultView: 'agendaWeek', // Only show week view
+			contentHeight: 'auto',
+			minTime: '8:00:00', // Start time for the calendar
+			maxTime: '23:00:00', // End time for the calendar
+			columnFormat: {
+			    week: 'ddd' // Only show day of the week names
+			},
+			displayEventTime: true, // Display event time
+	    })
+	
+		});
+	</script>
 	
 	<script> 
 		var myButton = document.getElementById("clickButton");

@@ -60,6 +60,8 @@ hr {
 }
 
 .leftWrapper {
+	/* min-width: 250px; */
+	max-width: 600px;
 	width: 19vw;
 	height: 100vh;
 	display: block;
@@ -226,8 +228,9 @@ hr {
 @media only screen and (max-width: 900px) {
 	
 	.leftWrapper {
+		margin: 0 auto;
 		display:block;
-		float: none;
+		position: relative;
 		width: 100%;
 	}
 	
