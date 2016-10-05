@@ -59,6 +59,11 @@ hr {
 	color: inherit;
 }
 
+.link-disguise:hover {
+	text-decoration: underline;
+	text-decoration-color: #454545;
+}
+
 .leftWrapper {
 	/* min-width: 250px; */
 	max-width: 600px;
@@ -225,7 +230,7 @@ hr {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1270px) {
 	
 	.leftWrapper {
 		margin: 0 auto;
