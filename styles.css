@@ -68,7 +68,6 @@ hr {
 	/* min-width: 250px; */
 	max-width: 600px;
 	width: 19vw;
-	height: 100vh;
 	display: block;
 	position: fixed;
 	margin-top: -10px;
@@ -208,6 +207,7 @@ hr {
 #calendar-wrapper {
 	max-height: calc(100vh - 25px);
 }
+
 #calendar {
 	display: block;
 	float: right;
@@ -233,10 +233,13 @@ hr {
 }
 
 @media only screen and (max-width: 1270px) {
+	body {
+		display: block;
+	}
 	
 	.leftWrapper {
 		margin: 0 auto;
-		display:block;
+		display: block;
 		position: relative;
 		width: 100%;
 	}
@@ -246,11 +249,21 @@ hr {
 		display: block;
 	}
 	
+	#calendar-wrapper {
+		margin: 0 auto;
+		display: block;
+		position: relative;
+		max-width: 600px;
+	}
+	
 	#calendar {
-		display: none;
+		display: block;
+		width: inherit;
+		position: relative;
 		padding: 40px;
 		font-family: Lato;
-		margin: 0 auto;
-		position: inherit;
+		float: inherit;
+		margin: 10px;
+		box-sizing: content-box;
 	}
 }
