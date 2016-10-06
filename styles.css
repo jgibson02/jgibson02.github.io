@@ -90,7 +90,6 @@ hr {
 	border-radius: 0.2em;
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-	max-height: calc(100vh - 25px);
 }
 
 #ProfilePic {
@@ -206,6 +205,9 @@ hr {
 	color: #005983;
 }
 
+#calendar-wrapper {
+	max-height: calc(100vh - 25px);
+}
 #calendar {
 	display: block;
 	float: right;
