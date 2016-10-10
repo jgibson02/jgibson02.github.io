@@ -46,7 +46,7 @@
 					<i class="detail-icon icon-phone"></i>
 				</span>
 				<span itemprop="telephone" class="detail-info">
-					<a href="tel:+17178776438" alt="My Cell Phone Number" class="link-disguise">(717) 877-6438</a>
+					<a href="tel:+17178776438" alt="My Cell Phone Number" class="link-disguise ">(717) 877-6438</a>
 				</span>
 			</div>
 			
@@ -122,10 +122,16 @@
          			color: '#f44242',
          		}
         	],
+        	header: {
+			    left:   'title',
+			    center: 'agendaDay,agendaWeek,month',
+			    right:  'today prev,next'
+			},
         	backgroundColor: '#444444',
 	        editable: false, // Don't allow editing of evenst
 			defaultView: 'agendaWeek', // Only show week view
 			contentHeight: 'auto',
+			height: 'auto',
 			minTime: '8:00:00', // Start time for the calendar
 			maxTime: '23:00:00', // End time for the calendar
 			columnFormat: {
