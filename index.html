@@ -103,44 +103,85 @@
 	<script type='text/javascript' src="lib/fullcalendar/dist/gcal.js"></script>
 	
 	<script type='text/javascript'>
-		$(document).ready(function() {
-	
-	    $('#calendar').fullCalendar({
-        	// put your options and callbacks here
-	        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-	        eventSources: [
-         		{
-         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-         		},
-         		{
-	         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-	         		color: '#fbd75b',
-	         		textColor: '#666666'
-         		},
-         		{
-         			googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
-         			color: '#f44242',
-         		}
-        	],
-        	header: {
-			    left:   'title',
-			    center: 'agendaDay,agendaWeek,month',
-			    right:  'today prev,next'
-			},
-        	backgroundColor: '#444444',
-	        editable: false, // Don't allow editing of evenst
-			defaultView: 'agendaWeek', // Only show week view
-			contentHeight: 'auto',
-			height: 'auto',
-			minTime: '8:00:00', // Start time for the calendar
-			maxTime: '23:00:00', // End time for the calendar
-			columnFormat: {
-			    week: 'ddd' // Only show day of the week names
-			},
-			displayEventTime: true, // Display event time
-	    })
-	
-		});
+		if (document.documentElement.clientWidth > 1270) {
+			$(document).ready(function() {
+		
+		    $('#calendar').fullCalendar({
+	        	// put your options and callbacks here
+		        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+		        eventSources: [
+	         		{
+	         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+	         		},
+	         		{
+		         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+		         		color: '#fbd75b',
+		         		textColor: '#666666'
+	         		},
+	         		{
+	         			googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
+	         			color: '#f44242',
+	         		}
+	        	],
+	        	header: {
+				    left:   'title',
+				    center: 'agendaDay,agendaWeek,month',
+				    right:  'today prev,next'
+				},
+	        	backgroundColor: '#444444',
+		        editable: false, // Don't allow editing of evenst
+				defaultView: 'agendaWeek', // Only show week view
+				contentHeight: 'auto',
+				height: 'auto',
+				minTime: '8:00:00', // Start time for the calendar
+				maxTime: '23:00:00', // End time for the calendar
+				columnFormat: {
+				    week: 'ddd' // Only show day of the week names
+				},
+				displayEventTime: true, // Display event time
+		    })
+		
+			});
+		} else {
+			$(document).ready(function() {
+		
+		    $('#calendar').fullCalendar({
+	        	// put your options and callbacks here
+		        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+		        eventSources: [
+	         		{
+	         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+	         		},
+	         		{
+		         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+		         		color: '#fbd75b',
+		         		textColor: '#666666'
+	         		},
+	         		{
+	         			googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
+	         			color: '#f44242',
+	         		}
+	        	],
+	        	header: {
+				    left:   'title',
+				    center: 'agendaDay,agendaWeek,month',
+				    right:  'today prev,next'
+				},
+	        	backgroundColor: '#444444',
+		        editable: false, // Don't allow editing of evenst
+				defaultView: 'agendaDay', // Only show week view
+				contentHeight: 'auto',
+				height: 'auto',
+				minTime: '8:00:00', // Start time for the calendar
+				maxTime: '23:00:00', // End time for the calendar
+				columnFormat: {
+				    week: 'ddd' // Only show day of the week names
+				},
+				displayEventTime: true, // Display event time
+		    })
+		
+			});
+		}
 	</script>
 	
 	<script> 
