@@ -268,4 +268,9 @@ hr {
 		margin: 10px;
 		box-sizing: content-box;
 	}
+	
+	.fc-header-left, fc-header-center, fc-header-right {
+	    width: 100%;
+	    display: block;
+	}
 }
