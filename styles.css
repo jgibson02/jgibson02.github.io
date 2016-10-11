@@ -269,7 +269,7 @@ hr {
 		box-sizing: content-box;
 	}
 	
-	.fc-header-left, fc-header-center, fc-header-right {
+	.fc-left, .fc-center, .fc-right {
 	    width: 100%;
 	    display: block;
 	}
