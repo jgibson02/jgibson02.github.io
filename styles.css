@@ -234,7 +234,7 @@ hr {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1465px) {
 	body {
 		display: block;
 	}
