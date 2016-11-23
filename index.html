@@ -5,18 +5,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>John H. Gibson</title>
-	
-	<link rel="stylesheet" type="text/css" href="styles.css"/>
-	<link rel="stylesheet" type="text/css" href="icomoon.css"/>
-	<link rel="stylesheet" type="text/css" href="node_modules/fullcalendar/dist/fullcalendar.css"/>
-	
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="icomoon.css" />
+	<link rel="stylesheet" type="text/css" href="jgibson02.github.io/node_modules/fullcalendar/dist/fullcalendar.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
 
 <body>
-	
+
 	<section class="leftWrapper">
 		<section id="AboutMe" class="card">
 			<div class="card-wrapper">
@@ -25,8 +25,7 @@
 				<h5 class="jobtitle">Computer Science Student</h5>
 				<hr>
 				<p class="AboutText">
-					I am a mentor for the Computer Science LLC at Bloomsburg
-					University working as an academic and wellness support resource.
+					I am a mentor for the Computer Science LLC at Bloomsburg University working as an academic and wellness support resource.
 				</p>
 			</div>
 		</section>
@@ -39,7 +38,7 @@
 					525 E 2nd St., 1914 Luzerne Hall, Bloomsburg, PA 17815, United States
 				</span>
 			</div>
-			
+
 			<div class="detail">
 				<span class="detail-icon">
 					<i class="detail-icon icon-phone"></i>
@@ -48,7 +47,7 @@
 					<a href="tel:+17178776438" alt="My Cell Phone Number" class="link-disguise ">(717) 877-6438</a>
 				</span>
 			</div>
-			
+
 			<div class="detail">
 				<span class="detail-icon">
 					<i class="detail-icon icon-mail"></i>
@@ -57,7 +56,7 @@
 					<a href="mailto:jonathangibson02@gmail.com" alt="My Email Address" class="link-disguise">jonathangibson02@gmail.com</a>
 				</span>
 			</div>
-			
+
 			<div class="detail">
 				<span class="detail-icon">
 					<i class="detail-icon icon-link"></i>
@@ -66,7 +65,7 @@
 					<a href="http://www.johngibson.me" target="_blank">http://www.johngibson.me</a>
 				</span>
 			</div>
-			
+
 			<div class="detail">
 				<span class="detail-icon">
 					<i class="detail-icon icon-file-pdf"></i>
@@ -75,27 +74,23 @@
 					<a href="https://drive.google.com/open?id=0B7qOx74qe3aJOV9MSXQwLXY3cnc" target="_blank" class="link-disguise">Resume</a>
 				</span>
 			</div>
-		</div>	
-		<hr style="margin-bottom: 20px">
-		<div class="social-links text-center">
-			<div class="social-links-text-center">
-				<a href="https://github.com/jgibson02" target="_blank" rel=
-				"tooltip" title="John H. Gibson on Github" class=
-				"social-link link-github icon-github">
-				</a>
-				<a href="https://www.linkedin.com/in/jgibson02" target="_blank" rel=
-				"tooltip" title="John H. Gibson on Linkedin" class=
-				"social-link link-linkedin icon-linkedin">
-				</a>
 			</div>
+			<hr style="margin-bottom: 20px">
+			<div class="social-links text-center">
+				<div class="social-links-text-center">
+					<a href="https://github.com/jgibson02" target="_blank" rel="tooltip" title="John H. Gibson on Github" class="social-link link-github icon-github">
+					</a>
+					<a href="https://www.linkedin.com/in/jgibson02" target="_blank" rel="tooltip" title="John H. Gibson on Linkedin" class="social-link link-linkedin icon-linkedin">
+					</a>
+				</div>
 		</section>
 	</section>
 	<section id="calendar-wrapper" class="card">
 		<div id="calendar" class="card-wrapper">
-			
+
 		</div>
 	</section>
-	
+
 	<!--
 	<div id="threeButtons">
 		<a id="resume" class="threeButtons card">RESUME</a>
@@ -103,105 +98,99 @@
 		<a id="contact" class="threeButtons card">CONTACT</a>
 	</div>
 	//-->
-	
+
 	<script type='text/javascript' src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
 	<script type='text/javascript' src="lib/moment/moment.js"></script>
 	<script type='text/javascript' src="lib/fullcalendar/dist/fullcalendar.js"></script>
 	<script type='text/javascript' src="lib/fullcalendar/dist/gcal.js"></script>
-	
+
 	<script type='text/javascript'>
 		if (document.documentElement.clientWidth > 1465) {
 			$(document).ready(function() {
-		
-		    $('#calendar').fullCalendar({
-	        	// put your options and callbacks here
-		        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-		        eventSources: [
-	         		{
-	         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-	         		},
-	         		{
-		         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-		         		color: '#fbd75b',
-		         		textColor: '#666666'
-	         		},
-	         		{
-	         			googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
-	         			color: '#f44242',
-	         		}
-	        	],
-	        	header: {
-				    left:   'title',
-				    center: 'agendaDay,agendaWeek,month',
-				    right:  'today prev,next'
-				},
-	        	backgroundColor: '#444444',
-		        editable: false, // Don't allow editing of evenst
-				defaultView: 'agendaWeek', // Only show week view
-				contentHeight: 'auto',
-				height: 'auto',
-				minTime: '8:00:00', // Start time for the calendar
-				maxTime: '23:00:00', // End time for the calendar
-				columnFormat: {
-				    week: 'ddd' // Only show day of the week names
-				},
-				displayEventTime: true, // Display event time
-		    })
-		
+
+				$('#calendar').fullCalendar({
+					// put your options and callbacks here
+					googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+					eventSources: [{
+						googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+					}, {
+						googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+						color: '#fbd75b',
+						textColor: '#666666'
+					}, {
+						googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
+						color: '#f44242',
+					}],
+					header: {
+						left: 'title',
+						center: 'agendaDay,agendaWeek,month',
+						right: 'today prev,next'
+					},
+					backgroundColor: '#444444',
+					editable: false, // Don't allow editing of evenst
+					defaultView: 'agendaWeek', // Only show week view
+					contentHeight: 'auto',
+					height: 'auto',
+					minTime: '8:00:00', // Start time for the calendar
+					maxTime: '23:00:00', // End time for the calendar
+					columnFormat: {
+						week: 'ddd' // Only show day of the week names
+					},
+					displayEventTime: true, // Display event time
+				})
+
 			});
-		} else {
+		}
+		else {
 			$(document).ready(function() {
-		
-		    $('#calendar').fullCalendar({
-	        	// put your options and callbacks here
-		        googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-		        eventSources: [
-	         		{
-	         			googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-	         		},
-	         		{
-		         		googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-		         		color: '#fbd75b',
-		         		textColor: '#666666'
-	         		},
-	         		{
-	         			googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
-	         			color: '#f44242',
-	         		}
-	        	],
-	        	header: {
-				    left:   'title',
-				    center: '',
-				    right:  'today prev,next'
-				},
-	        	backgroundColor: '#444444',
-		        editable: false, // Don't allow editing of evenst
-				defaultView: 'agendaDay', // Only show week view
-				contentHeight: 'auto',
-				height: 'auto',
-				minTime: '8:00:00', // Start time for the calendar
-				maxTime: '23:00:00', // End time for the calendar
-				columnFormat: {
-				    week: 'ddd' // Only show day of the week names
-				},
-				displayEventTime: true, // Display event time
-		    })
-		
+
+				$('#calendar').fullCalendar({
+					// put your options and callbacks here
+					googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+					eventSources: [{
+						googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+					}, {
+						googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+						color: '#fbd75b',
+						textColor: '#666666'
+					}, {
+						googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
+						color: '#f44242',
+					}],
+					header: {
+						left: 'title',
+						center: '',
+						right: 'today prev,next'
+					},
+					backgroundColor: '#444444',
+					editable: false, // Don't allow editing of evenst
+					defaultView: 'agendaDay', // Only show week view
+					contentHeight: 'auto',
+					height: 'auto',
+					minTime: '8:00:00', // Start time for the calendar
+					maxTime: '23:00:00', // End time for the calendar
+					columnFormat: {
+						week: 'ddd' // Only show day of the week names
+					},
+					displayEventTime: true, // Display event time
+				})
+
 			});
 		}
 	</script>
-	
-	<script> 
+
+	<script>
 		var myButton = document.getElementById("clickButton");
 		var myText = document.getElementById("helloText");
-		
+
 		myButton.addEventListener('click', doSomething, false);
-		
+
 		function doSomething() {
 			myText.textContent = "hello, world!";
 		}
 	</script>
 
 </body>
+
 </html>
