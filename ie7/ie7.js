@@ -24,6 +24,7 @@
 		'icon-github': '&#xeab0;',
 		'icon-linkedin': '&#xeac9;',
 		'icon-file-pdf': '&#xeadf;',
+		'icon-codepen': '&#xeae8;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

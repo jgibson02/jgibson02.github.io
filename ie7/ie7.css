@@ -31,4 +31,7 @@
 .icon-file-pdf {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeadf;');
 }
+.icon-codepen {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae8;');
+}
 
