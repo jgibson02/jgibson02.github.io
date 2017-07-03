@@ -90,7 +90,8 @@ hr {
   width: 19vw;
   display: block;
   position: fixed;
-  margin-top: -10px; }
+  float: left;
+}
 
 #AboutMe {
   text-align: center;
@@ -223,13 +224,37 @@ hr {
   text-decoration: none;
   color: #005983; }
 
+#calendar-wrapper {
+  float: right;
+  width: 80vw;
+  min-height: 91vh;
+}
+
+#calendar-wrapper > * {
+  display: inline-block;
+}
+
+.nav-tabs {
+    list-style-position: inside;
+}
+
 #calendar {
   display: block;
   float: right;
-  width: 81%;
   padding: 30px;
   font-family: Lato;
-  margin: 0 auto; }
+  margin-top: -5px;
+}
+
+#portfolio {
+  width: 80vw;
+  padding: 1vw;
+}
+
+.cp_embed_wrapper {
+  width: 35vw;
+  height: 20px;
+}
 
 .buttonStyle:hover {
   border: thin solid #FFCC00;
