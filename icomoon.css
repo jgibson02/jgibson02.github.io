@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2dlwym');
-  src:  url('fonts/icomoon.eot?2dlwym#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2dlwym') format('truetype'),
-    url('fonts/icomoon.woff?2dlwym') format('woff'),
-    url('fonts/icomoon.svg?2dlwym#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pf7soy');
+  src:  url('fonts/icomoon.eot?pf7soy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pf7soy') format('truetype'),
+    url('fonts/icomoon.woff?pf7soy') format('woff'),
+    url('fonts/icomoon.svg?pf7soy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,23 +24,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e900";
+.icon-clock:before {
+  content: "\e906";
 }
-.icon-email:before {
-  content: "\e900";
+.icon-circle:before {
+  content: "\e907";
 }
-.icon-letter:before {
-  content: "\e900";
+.icon-graduation-cap:before {
+  content: "\e903";
 }
-.icon-envelope:before {
-  content: "\e900";
+.icon-mortar-board:before {
+  content: "\e903";
 }
-.icon-contact:before {
-  content: "\e900";
+.icon-heart:before {
+  content: "\e904";
 }
-.icon-location:before {
-  content: "\e901";
+.icon-like:before {
+  content: "\e904";
+}
+.icon-love:before {
+  content: "\e904";
+}
+.icon-favorite:before {
+  content: "\e904";
+}
+.icon-office:before {
+  content: "\e905";
+}
+.icon-buildings:before {
+  content: "\e905";
+}
+.icon-work:before {
+  content: "\e905";
+}
+.icon-profile:before {
+  content: "\e902";
+}
+.icon-file:before {
+  content: "\e902";
+}
+.icon-document:before {
+  content: "\e902";
+}
+.icon-page:before {
+  content: "\e902";
+}
+.icon-user:before {
+  content: "\e902";
+}
+.icon-paper:before {
+  content: "\e902";
 }
 .icon-phone:before {
   content: "\e942";
@@ -60,4 +93,21 @@
 .icon-codepen:before {
   content: "\eae8";
 }
-
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e900";
+}
+.icon-letter:before {
+  content: "\e900";
+}
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e901";
+}

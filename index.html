@@ -8,29 +8,25 @@
 
 	<link rel="shortcut icon" type="image/png" href="/favicon.ico">
 
-	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="stylesheet" type="text/css" href="icomoon.css" />
 	<link rel="stylesheet" type="text/css" href="fullcalendar.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-
-	<section class="leftWrapper">
-		<section id="AboutMe" class="card">
+	<section id="leftWrapper">
+		<section id="AboutMe">
 			<div class="card-wrapper">
 				<img src="pic.png" id="ProfilePic"></img>
 				<h1 id="name">John H. Gibson</h1>
 				<h5 class="jobtitle">Computer Science Student</h5>
-				<hr>
-				<p class="AboutText">
-					I am a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University.
-				</p>
 			</div>
 		</section>
 		<section class="contact-details card card-wrapper">
@@ -99,18 +95,171 @@
 			</a>
 		</div>
 	</section>
-	<div id="calendar-wrapper" class="card card-wrapper">
+	<div id="rightWrapper" class="card-wrapper">
 		<ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#home">Calendar</a></li>
-			<li><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+			<li class="active"><a data-toggle="tab" href="#background">Background</a></li>
+			<li><a data-toggle="tab" href="#calendarTab">Calendar</a></li>
+			<li><a data-toggle="tab" href="#portfolio">Codepens</a></li>
 		</ul>
 		<div class="tab-content">
-			<div id="home" class="tab-pane fade in active">
+			<div id="background" class="tab-pane fade in active">
+				<h4 class="text-uppercase">Background</h4>
+				<hr>
+				<div id="background-details">
+					<div id="about" class="detail">
+						<div class="icon">
+							<i class="fs-lg icon-profile"></i>
+						</div>
+						<div class="info">
+							<h4 class="title text-uppercase">About</h4>
+							<div itemprop="description" class="content">
+								I am a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University.
+							</div>
+						</div>
+					</div>
+					<div id="work-experience" class="detail">
+						<div class="icon">
+							<i class="fs-lg icon-work"></i>
+						</div>
+						<div class="info">
+							<h4 class="title text-uppercase">Work Experience</h4>
+							<ul class="list-unstyled">
+								<li class="card card-nested clearfix">
+									<div class="content">
+										<p class="clear-margin relative">
+											<i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i>
+											<strong>Software Engineer Intern, NASA Langley Research Center</strong>
+										</p>
+										<p class="text-muted"><small>
+											<span class="mr-10">Jun, 2017 - Present</span>
+											<span><i class="icon-clock mr-5"></i>2 months</span>
+										</small></p>
+									</div>
+								</li>
+								<li class="card card-nested clearfix">
+									<div class="content">
+										<p class="clear-margin relative">
+											<strong>Student Living and Learning Communities Mentor, <a href="https://www.bloomu.edu/">Bloomsburg University</a></strong>
+										</p>
+										<p class="text-muted"><small>
+											<span class="mr-10">Aug, 2016 - Present</span>
+											<span><i class="icon-clock mr-5"></i>11 months</span>
+										</small></p>
+										<ul>
+											<li>Support the academic success and wellness of freshmen in the Computer Science program.</li>
+											<li>Tutoring in lower level Computer Science and Math subjects.</li>
+											<li>Plan and organize events for members of the Living and Learning Community.</li>
+											<li>Establish a dedicated server  for LLC-related activities including a web hosting service.</li>
+											<li>Constructing and programming robots with LLC members and faculty directors.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="card card-nested clearfix">
+									<div class="content">
+										<p class="clear-margin relative">
+											<strong>Guest Services and Representative, <a href="http://www.hersheypark.com/">Hershey Entertainment and Resorts</a></strong>
+										</p>
+										<p class="text-muted"><small>
+											<span class="mr-10">May, 2016 - July, 2016</span>
+											<span><i class="icon-clock mr-5"></i>3 months</span>
+										</small></p>
+										<ul>
+											<li>Sold admissions tickets, meal vouchers, and game booklets.</li>
+											<li>Checked and received tickets for guests entering the park.</li>
+											<li>Provided more specialized information on park amenities and services.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="education" class="detail">
+						<div class="icon">
+							<i class="fs-lg icon-graduation-cap"></i>
+						</div>
+						<div class="info">
+							<h4 class="title text-uppercase">Education</h4>
+							<ul class="list-unstyled">
+								<li class="card card-nested">
+									<div class="content">
+										<p class="clear-margin relative">
+											<i rel="tooltip" title="Currently Pursuing" data-placement="left" class="icon-circle current-event"></i>
+											<strong>Computer Science, Bachelor, Bloomsburg University</strong>
+										</p>
+										<p class="text-muted"><small>Aug, 2015 - Present</small></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="activities" class="detail">
+						<div class="icon">
+							<i class="fs-lg icon-heart"></i>
+						</div>
+						<div class="info">
+							<h4 class="title text-uppercase">Activities</h4>
+							<ul class="list-unstyled">
+								<li class="card card-nested">
+									<div class="content">
+										<p class="clear-margin relative">
+											<strong>ACM Officer/Member</strong>
+										</p>
+										<p class="text-muted"><small>Aug, 2015 - Present</small></p>
+										<ul>
+											<li>Gained knowledge in data structures, source code management systems such as GitHub and BitBucket, Amazon Web Services, and web-crawlers.</li>
+											<li>Participated in a student-led project to construct a system of GPS trackers with the purpose of building a web \& mobile application to track on-campus shuttle buses.</li>
+											<li>Competitor for programming team, placed 4th at PACISE 2017.</li>
+										</ul>
+									</div>
+								</li>
+								<li class="card card-nested">
+									<div class="content">
+										<p class="clear-margin relative">
+											<strong>Volunteer Tutor</strong>
+										</p>
+										<p class="text-muted"><small>Aug, 2016 - Present</small></p>
+										<ul>
+											<li>Provided tutorial services for 3-4 hours a week in freshmen-level Computer Science and Math courses.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="calendarTab" class="tab-pane fade">
 				<div id="calendar"></div>
 			</div>
 			<div id="portfolio" class="tab-pane fade">
-				<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-				<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="portfolio-block">
+					<p data-height="265" data-theme-id="0" data-slug-hash="QdyapV" data-default-tab="result" data-user="jgibson02" data-embed-version="2" data-pen-title="Twitch API" class="codepen">See the Pen <a href="http://codepen.io/jgibson02/pen/QdyapV/">Twitch API</a> by John Gibson (<a href="http://codepen.io/jgibson02">@jgibson02</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</div>
 			</div>
 		</div>
 	</div>
