@@ -116,7 +116,9 @@ body {
 .card-nested {
   min-height: 0;
   margin-bottom: 10px;
-  border-width: 1px 0 0 0; }
+  border-width: 1px 0 0 0;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0; }
 
 .card-nested:before, .card-nested:after {
   content: " ";
