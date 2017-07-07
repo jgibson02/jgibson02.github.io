@@ -140,7 +140,7 @@ body {
   top: 0.52em;
   left: -13px;
   height: 5pt;
-  width: 4.75pt;
+  width: 5pt;
   box-shadow: 0 0 0 #5ACE24;
   content: '"' '"';
   border-radius: 50%;
@@ -328,7 +328,7 @@ body {
       width: calc(100%) !important;
       padding: 0 !important; }
     #portfolio .portfolio-block:not(:first-child) {
-      margin-top: 1em; }
+      margin-top: calc(1.0em - 6px); }
 
   .fc-left, .fc-center, .fc-right {
     width: 100%;
