@@ -311,13 +311,24 @@ body {
 
   #calendar {
     display: block;
-    width: inherit;
     position: relative;
     padding: 40px;
     font-family: Lato;
     float: inherit;
     margin: 10px;
     box-sizing: content-box; }
+
+  #portfolio {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap; }
+    #portfolio .portfolio-block {
+      width: calc(100%) !important;
+      padding: 0 !important; }
+    #portfolio .portfolio-block:not(:first-child) {
+      margin-top: 1em; }
 
   .fc-left, .fc-center, .fc-right {
     width: 100%;
