@@ -284,6 +284,11 @@ body {
   color: #669900;
   cursor: pointer; }
 
+.tab-content > .tab-pane:not(.active) {
+  display: block;
+  height: 0;
+  overflow-y: hidden; }
+
 @media only screen and (max-width: 1465px) {
   body {
     display: block; }
