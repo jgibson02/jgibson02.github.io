@@ -277,8 +277,10 @@ body {
   	padding-right: 10px;
 }
 
-.detail-info > a:hover {
-	background-color: #CCC;
+.detail-info, #background {
+	a:hover {
+		background-color: #CCC;
+	}
 }
 
 .social-links {

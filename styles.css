@@ -218,7 +218,7 @@ body {
   font-size: 0.9em;
   padding-right: 10px; }
 
-.detail-info > a:hover {
+.detail-info a:hover, #background a:hover {
   background-color: #CCC; }
 
 .social-links {
