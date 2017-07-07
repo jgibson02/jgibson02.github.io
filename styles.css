@@ -1,6 +1,9 @@
 @font-face {
   font-family: League Spartan;
   src: url("fonts/leaguespartan-bold.ttf"); }
+@font-face {
+  font-family: Circular;
+  src: url("fonts/circular-book.otf"); }
 a {
   text-decoration: none; }
 
@@ -174,7 +177,8 @@ body {
   vertical-align: -0.12em; }
 
 #name {
-  font-weight: 500;
+  font-family: "Circular";
+  font-weight: 700;
   font-style: normal;
   font-size: 225%;
   color: #303030;
