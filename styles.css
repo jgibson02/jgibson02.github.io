@@ -291,17 +291,19 @@ body {
 
 @media only screen and (max-width: 1120px) {
   body {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 2em;
     padding-bottom: 2em; }
 
   #leftWrapper {
+    display: block;
     margin: 0 auto;
     padding: 0;
-    display: block;
     position: relative;
     width: 100%;
-    max-width: 600px; }
+    max-width: 600px;
+    max-height: initial; }
 
   #AboutMe {
     position: relative;
@@ -309,7 +311,6 @@ body {
 
   #rightWrapper {
     margin: 0 auto;
-    display: block;
     position: relative;
     max-width: 600px; }
 
