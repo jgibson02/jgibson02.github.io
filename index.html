@@ -28,7 +28,7 @@
 	
 	<!-- FullCalendar Initialization -->
 	<script type='text/javascript'>
-		if (document.documentElement.clientWidth > 1465) {
+		if (document.documentElement.clientWidth > 1120) {
 			$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
 
 				$('#calendar').fullCalendar({
@@ -351,18 +351,7 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-		var myButton = document.getElementById("clickButton");
-		var myText = document.getElementById("helloText");
-
-		myButton.addEventListener('click', doSomething, false);
-
-		function doSomething() {
-			myText.textContent = "hello, world!";
-		}
-	</script>
-
+	<script src="script.js"></script>
 </body>
 
 </html>
