@@ -51,16 +51,17 @@ body {
 
 #leftWrapper {
   display: flex;
-  flex: 0 0 20vw;
+  flex: 0 0 25vw;
   flex-direction: column;
   max-width: 600px;
   width: 25vw;
   padding: 1em 0 1em 1em;
-  max-height: 100vh; }
+  max-height: 100vh;
+  position: fixed; }
 
 #rightWrapper {
   flex-grow: 1;
-  margin: 1em; }
+  margin: 1em 1em 1em calc(25vw + 1em); }
   #rightWrapper #background {
     padding: 10px 20px;
     font-family: Lato, 'Product Sans', Arial, sans-serif; }
@@ -121,7 +122,7 @@ body {
 .card-wrapper {
   background-color: white;
   border-radius: 0.2em;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
 
 .card-nested {
   min-height: 0;
@@ -193,6 +194,7 @@ body {
 
 .contact-details {
   margin-top: 1em;
+  padding: 10px;
   text-align: left;
   font-family: Lato;
   font-size: 14px;
