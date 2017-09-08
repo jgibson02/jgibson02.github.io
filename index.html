@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="jgibson02.github.io/favicon.ico" >
 	
 	<link rel="stylesheet" type="text/css" href="icomoon.css" />
-	<link rel="stylesheet" type="text/css" href="fullcalendar.css" />
+	<link rel="stylesheet" type="text/css" href="lib/fullcalendar/fullcalendar.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="styles.css" />
@@ -22,8 +22,8 @@
 	<script type='text/javascript' src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
 	<script type='text/javascript' src="lib/moment/moment.js"></script>
-	<script type='text/javascript' src="lib/fullcalendar/dist/fullcalendar.js"></script>
-	<script type='text/javascript' src="lib/fullcalendar/dist/gcal.js"></script>
+	<script type='text/javascript' src="lib/fullcalendar/fullcalendar.js"></script>
+	<script type='text/javascript' src="lib/fullcalendar/gcal.js"></script>
 	<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<!-- FullCalendar Initialization -->
@@ -59,9 +59,7 @@
 					height: 'auto',
 					minTime: '8:00:00', // Start time for the calendar
 					maxTime: '23:00:00', // End time for the calendar
-					columnFormat: {
-						week: 'ddd' // Only show day of the week names
-					},
+					nowIndicator: true,
 					displayEventTime: true, // Display event time
 				})
 
@@ -100,9 +98,7 @@
 					height: 'auto',
 					minTime: '8:00:00', // Start time for the calendar
 					maxTime: '23:00:00', // End time for the calendar
-					columnFormat: {
-						week: 'ddd' // Only show day of the week names
-					},
+					nowIndicator: true,
 					displayEventTime: true, // Display event time
 				})
 
