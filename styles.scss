@@ -121,6 +121,19 @@ body {
 				}
 			}
 		}
+		
+		.skills {
+	        table tr td:first-child {
+	            text-align: right;
+	            font-weight: bold;
+	            font-size: 1em;
+	            padding-right: 0.8em;
+	        }
+	
+	        .skills__list span:not(:last-child)::after {
+	            content: ', ';
+	        }
+	    }
 	}
 	
 	#portfolio {
@@ -200,11 +213,11 @@ body {
 	animation: current-event 2s infinite;
 }
 
-#ProfilePic {
+.avatar {
 	background-repeat: no-repeat;
   	background-position: center center;
   	background-size: cover;
-  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
   	width: 200px;
   	margin: 10px;
   	border-radius: 50%;
