@@ -90,7 +90,8 @@ body {
           vertical-align: -15%; }
     #rightWrapper #background .skills table tr td {
       vertical-align: top;
-      padding: 0.5em 0; }
+      padding: 0.5em 0;
+      line-height: 2em; }
       #rightWrapper #background .skills table tr td:first-child {
         text-align: right;
         font-weight: bold;
@@ -99,8 +100,13 @@ body {
         min-width: 11em; }
     #rightWrapper #background .skills table tr:not(:first-child) td:not(:first-child) {
       border-top: 1px solid rgba(0, 0, 0, 0.05); }
-    #rightWrapper #background .skills .skills__list span:not(:last-child)::after {
-      content: ', '; }
+    #rightWrapper #background .skills .skills__list span {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 0.2em;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 0.2em 0.4em; }
+    #rightWrapper #background .skills .skills__list span:not(:last-child) {
+      margin-right: 0.3em; }
   #rightWrapper #portfolio {
     padding: 1em;
     display: flex;
@@ -144,7 +150,8 @@ body {
   border-color: rgba(0, 0, 0, 0.2);
   border-radius: 0; }
 
-.card-nested:before, .card-nested:after {
+.card-nested:before,
+.card-nested:after {
   content: " ";
   display: table; }
 
@@ -233,7 +240,8 @@ body {
   font-size: 0.9em;
   padding-right: 10px; }
 
-.detail-info a:hover, #background a:hover {
+.detail-info a:hover,
+#background a:hover {
   background-color: #CCC; }
 
 .social-links {
@@ -350,7 +358,9 @@ body {
     #portfolio .portfolio-block:not(:first-child) {
       margin-top: calc(1.0em - 6px); }
 
-  .fc-left, .fc-center, .fc-right {
+  .fc-left,
+  .fc-center,
+  .fc-right {
     width: 100%;
     display: block;
     margin-top: 10px; } }
