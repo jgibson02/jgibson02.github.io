@@ -88,11 +88,17 @@ body {
           font-size: 1.33333333em;
           line-height: .75em;
           vertical-align: -15%; }
-    #rightWrapper #background .skills table tr td:first-child {
-      text-align: right;
-      font-weight: bold;
-      font-size: 1em;
-      padding-right: 0.8em; }
+    #rightWrapper #background .skills table tr td {
+      vertical-align: top;
+      padding: 0.5em 0; }
+      #rightWrapper #background .skills table tr td:first-child {
+        text-align: right;
+        font-weight: bold;
+        font-size: 1em;
+        padding-right: 0.8em;
+        min-width: 11em; }
+    #rightWrapper #background .skills table tr:not(:first-child) td:not(:first-child) {
+      border-top: 1px solid rgba(0, 0, 0, 0.05); }
     #rightWrapper #background .skills .skills__list span:not(:last-child)::after {
       content: ', '; }
   #rightWrapper #portfolio {

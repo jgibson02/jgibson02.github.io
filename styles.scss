@@ -123,12 +123,24 @@ body {
 		}
 		
 		.skills {
-	        table tr td:first-child {
-	            text-align: right;
-	            font-weight: bold;
-	            font-size: 1em;
-	            padding-right: 0.8em;
-	        }
+	        table tr {
+	        	td {
+	        		vertical-align: top;
+	        		padding: 0.5em 0;
+	        		
+	        		&:first-child {
+			            text-align: right;
+			            font-weight: bold;
+			            font-size: 1em;
+			            padding-right: 0.8em;
+			            min-width: 11em; 
+			        }
+	        	}
+	        	
+	        	&:not(:first-child) td:not(:first-child) {
+	        		border-top: 1px solid rgba(0,0,0,0.05);
+	        	}
+	        } 
 	
 	        .skills__list span:not(:last-child)::after {
 	            content: ', ';
