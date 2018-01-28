@@ -7,7 +7,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function() {
-    gulp.src('./css/*.css');
+    gulp.src('./**/*.css');
 });
 
 gulp.task('json', function() {
@@ -15,13 +15,13 @@ gulp.task('json', function() {
 });
 
 gulp.task('sass', function() {
-    gulp.src('./*.scss')
+    gulp.src('./**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('mustache', function() {
-    gulp.src('./*.mustache')
+    gulp.src('./**/*.mustache')
         .pipe(mustache('./resume-data.json', {extension: '.html'}))
         .pipe(gulp.dest('./'));
 });
