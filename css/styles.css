@@ -334,7 +334,7 @@ body {
   #rightWrapper {
     margin: 0 auto;
     position: relative;
-    max-width: 600px; }
+    max-width: 100vw; }
   #calendar {
     display: block;
     position: relative;

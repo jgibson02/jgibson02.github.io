@@ -15,13 +15,13 @@ gulp.task('json', function() {
 });
 
 gulp.task('sass', function() {
-    gulp.src('./**/*.scss')
+    gulp.src('./styles.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('mustache', function() {
-    gulp.src('./**/*.mustache')
+    gulp.src('./index.mustache')
         .pipe(mustache('./resume-data.json', {extension: '.html'}))
         .pipe(gulp.dest('./'));
 });

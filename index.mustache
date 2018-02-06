@@ -111,7 +111,7 @@
 		{{#about-me}}
 		<section id="AboutMe">
 			<div class="card-wrapper">
-				<img src="pic.png" class="avatar"></img>
+				<img src="profile_300px.png" class="avatar"></img>
 				<h1 id="name">{{about-me.first-name}} {{about-me.last-name}}</h1>
 				<h5 class="jobtitle">{{about-me.position}}</h5>
 			</div>
@@ -274,7 +274,9 @@
 										</p>
 										<p class="text-muted"><small>{{date-range}}</small></p>
 										<ul>
-											{{#list-items}}<li>{{.}}</li>{{/list-items}}
+											{{#list-items}}
+												<li>{{.}}</li>
+											{{/list-items}}
 										</ul>
 									</div>
 								</li>
