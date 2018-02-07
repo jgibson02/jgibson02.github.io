@@ -27,82 +27,40 @@
 	<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<!-- FullCalendar Initialization -->
-	<script type='text/javascript'>
-		if (document.documentElement.clientWidth > 1120) {
-			$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
-
-				$('#calendar').fullCalendar({
-					// put your options and callbacks here
-					googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-					eventSources: [{
-						googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-					}, {
-						googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-						color: '#fbd75b',
-						textColor: '#666666'
-					}, {
-						googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
-						color: '#f44242',
-					}, {
-						googleCalendarId: 'acmbloomsburg@gmail.com',
-						color: '#50D1C1'
-					}],
-					header: {
-						left: 'title',
-						center: 'agendaDay,agendaWeek,month',
-						right: 'today prev,next'
-					},
-					backgroundColor: '#444444',
-					editable: false, // Don't allow editing of evenst
-					defaultView: 'agendaWeek', // Only show week view
-					contentHeight: 'auto',
-					height: 'auto',
-					minTime: '8:00:00', // Start time for the calendar
-					maxTime: '23:00:00', // End time for the calendar
-					nowIndicator: true,
-					displayEventTime: true, // Display event time
-				})
-
-			});
-		} else {
-			$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
-				$('#calendar').fullCalendar({
-					// put your options and callbacks here
-					googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
-					eventSources: [{
-						googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
-					}, {
-						googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
-						color: '#fbd75b',
-						textColor: '#666666'
-					}, {
-						googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
-						color: '#f44242'
-					}, {
-						googleCalendarId: '35vhpsnhhul9197j6g9s9gf67c@group.calendar.google.com',
-						color: '#b3dc6c'
-					}, {
-						googleCalendarId: 'acmbloomsburg@gmail.com',
-						color: '#50D1C1'
-					}],
-					header: {
-						left: 'title',
-						center: '',
-						right: 'today prev,next'
-					},
-					backgroundColor: '#444444',
-					editable: false, // Don't allow editing of evenst
-					defaultView: 'agendaDay', // Only show week view
-					contentHeight: 'auto',
-					height: 'auto',
-					minTime: '8:00:00', // Start time for the calendar
-					maxTime: '23:00:00', // End time for the calendar
-					nowIndicator: true,
-					displayEventTime: true, // Display event time
-				})
-
-			});
-		}
+	<script type='text/javascript' defer>
+		$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
+			$('#calendar').fullCalendar({
+				// put your options and callbacks here
+				googleCalendarApiKey: 'AIzaSyB0KY8bRjG7kYJgxMBXSZAR0rts5jrvUI4',
+				eventSources: [{
+					googleCalendarId: '2njdfsb87lg450v4f5q3k845mc@group.calendar.google.com'
+				}, {
+					googleCalendarId: 'ugnnjprhdmlm2h3o4v9nu8j5dk@group.calendar.google.com',
+					color: '#fbd75b',
+					textColor: '#666666'
+				}, {
+					googleCalendarId: 'heie2a0o9ko423q02rqtpqa88g@group.calendar.google.com',
+					color: '#f44242',
+				}, {
+					googleCalendarId: 'acmbloomsburg@gmail.com',
+					color: '#50D1C1'
+				}],
+				header: {
+					left: 'title',
+					center: 'agendaDay,agendaWeek,month',
+					right: 'today prev,next'
+				},
+				backgroundColor: '#444444',
+				editable: false,
+				defaultView: document.documentElement.clientWidth > 1120 ? 'agendaWeek' : 'agendaDay',
+				contentHeight: 'auto',
+				height: 'auto',
+				minTime: '8:00:00', // Start time for the calendar
+				maxTime: '23:00:00', // End time for the calendar
+				nowIndicator: true,
+				displayEventTime: true, // Display event time
+			})
+		});
 	</script>
 </head>
 
@@ -140,7 +98,7 @@
 					<i class="detail-icon icon-mail"></i>
 				</span>
 				<span class="detail-info">
-					<a href="mailto:{{about-me.email}}" alt="My Email Address" class="link-disguise">{{about-me.email}}</a>
+					<a href="mailto:{{about-me.email}}" alt="My Email Address" class="link-disguise" rel="noopener">{{about-me.email}}</a>
 				</span>
 			</div>
 
@@ -149,7 +107,7 @@
 					<i class="detail-icon icon-link"></i>
 				</span>
 				<span class="detail-info">
-					<a href="{{about-me.website}}" target="_blank">{{about-me.website}}</a>
+					<a href="{{about-me.website}}" target="_blank" rel="noopener">{{about-me.website}}</a>
 				</span>
 			</div>
 
@@ -158,7 +116,7 @@
 					<i class="detail-icon icon-file-pdf"></i>
 				</span>
 				<span class="detail-info">
-					<a href="https://drive.google.com/file/d/0B7qOx74qe3aJOV9MSXQwLXY3cnc/view?usp=sharing" target="_blank" class="link-disguise">Resume</a>
+					<a href="https://drive.google.com/file/d/0B7qOx74qe3aJOV9MSXQwLXY3cnc/view?usp=sharing" target="_blank" class="link-disguise" rel="noopener">Resume</a>
 				</span>
 			</div>
 
@@ -166,18 +124,18 @@
 
 			<div class="social-links text-center">
 				<div class="social-links-text-center">
-					<a href="https://github.com/{{about-me.github}}" target="_blank" rel="tooltip" title="John Gibson on Github" class="social-link link-github icon-github">
+					<a href="https://github.com/{{about-me.github}}" target="_blank" rel="noopener" title="John Gibson on Github" class="social-link link-github icon-github">
 					</a>
-					<a href="https://codepen.io/{{about-me.codepen}}" target="_blank" rel="tooltip" title="John Gibson on Codepen" class="social-link fa fa-codepen">
+					<a href="https://codepen.io/{{about-me.codepen}}" target="_blank" rel="noopener" title="John Gibson on Codepen" class="social-link fa fa-codepen">
 					</a>
-					<a href="https://www.linkedin.com/in/{{about-me.linkedin}}" target="_blank" rel="tooltip" title="John Gibson on Linkedin" class="social-link link-linkedin icon-linkedin">
+					<a href="https://www.linkedin.com/in/{{about-me.linkedin}}" target="_blank" rel="noopener" title="John Gibson on Linkedin" class="social-link link-linkedin icon-linkedin">
 					</a>
 				</div>
 			</div>
 		</section>
 
 		<div>
-			<a href="https://github.com/{{about-me.github}}/Fronds/releases/download/v1.0/Fronds.exe">
+			<a href="https://github.com/{{about-me.github}}/Fronds/releases/download/v1.0/Fronds.exe" rel="noopener">
 				<img src="schwimmer.png" height=1 width=1/>
 			</a>
 		</div>
