@@ -13,10 +13,14 @@ body {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  background-color: #EFEFEF !important;
+  background-image: url("https://res.cloudinary.com/timber/image/upload/v1504129086/hero-lines_g2jsik.svg"), linear-gradient(#130F21, #22213F);
+  background-repeat: no-repeat;
+  background-position: 20% 100%;
+  background-attachment: fixed;
   font-family: 'Product Sans', Lato, Arial, sans-serif !important;
   line-height: 1.43;
-  margin: 0; }
+  margin: 0;
+  overflow-y: scroll; }
 
 #leftWrapper hr {
   height: 0;
@@ -100,7 +104,7 @@ body {
         font-size: 1em;
         padding-right: 0.8em;
         min-width: 11em; }
-    #rightWrapper #background .skills table tr:not(:first-child) td:not(:first-child) {
+    #rightWrapper #background .skills table tr:not(:first-child) {
       border-top: 1px solid rgba(0, 0, 0, 0.05); }
     #rightWrapper #background .skills .skills__list span {
       background-color: rgba(0, 0, 0, 0.05);
@@ -135,30 +139,24 @@ body {
     -webkit-margin-after: 0; }
 
 .card {
-  background: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   padding: 10px; }
-
-.card-wrapper {
-  background-color: white;
-  border-radius: 0.2em;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
-
-.card-nested {
-  min-height: 0;
-  margin-bottom: 10px;
-  border-width: 1px 0 0 0;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-radius: 0; }
-
-.card-nested:before,
-.card-nested:after {
-  content: " ";
-  display: table; }
-
-.card-nested:after {
-  clear: both; }
+  .card-wrapper {
+    background-color: #fefefe;
+    border-radius: 0.55rem;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
+  .card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0; }
+    .card-nested:before, .card-nested:after {
+      content: " ";
+      display: table; }
+    .card-nested:after {
+      clear: both; }
 
 .current-event {
   background: #5ACE24;
@@ -176,7 +174,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   width: 200px;
   margin: 10px;
   border-radius: 50%;
@@ -204,7 +202,7 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 225%;
-  color: #303030;
+  color: #6764ae;
   margin-top: 0.3em;
   margin-bottom: 0.2em; }
 
@@ -247,44 +245,28 @@ body {
   background-color: #CCC; }
 
 .social-links {
-  text-align: center;
-  line-height: 2.5; }
-
-.social-link {
-  margin-left: 5px;
-  min-width: 35px;
-  display: inline-block;
-  font-size: 2em; }
-
-.link-github {
-  color: #454545; }
-
-.link-github:hover {
-  text-decoration: none;
-  color: #2b2b2b; }
-
-.link-codepen {
-  color: #454545; }
-
-.fa-codepen {
-  font-size: 2em !important;
-  color: #454545; }
-
-.fa-codepen:hover {
-  text-decoration: none;
-  color: #2b2b2b; }
-
-.link-codepen:hover {
-  text-decoration: none;
-  color: #2b2b2b;
-  animation: pulse 2s infinite; }
-
-.link-linkedin {
-  color: #007bb6; }
-
-.link-linkedin:hover {
-  text-decoration: none;
-  color: #005983; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 2.1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em; }
+  .social-links .social-link {
+    display: inline-block; }
+    .social-links .social-link:not(:first-child) {
+      margin-left: 0.3em; }
+  .social-links .link-github, .social-links .link-codepen, .social-links .link-medium {
+    color: #454545; }
+    .social-links .link-github:hover, .social-links .link-codepen:hover, .social-links .link-medium:hover {
+      text-decoration: none;
+      color: #2b2b2b; }
+  .social-links .link-linkedin {
+    color: #007bb6; }
+    .social-links .link-linkedin:hover {
+      text-decoration: none;
+      color: #005983; }
 
 #calendar {
   padding: 30px;
@@ -334,7 +316,7 @@ body {
   #rightWrapper {
     margin: 0 auto;
     position: relative;
-    max-width: 100vw; }
+    max-width: 600px; }
   #background .detail li {
     margin-left: -2em; }
   #calendar {
