@@ -8,6 +8,11 @@
 	src: url('fonts/circular-book.otf');
 }
 
+@font-face {
+	font-family: Product Sans;
+	src: url('https://fonts.googleapis.com/css?family=Product+Sans%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i');
+}
+
 $social-link-grey: #454545;
 $slg-hover: #2b2b2b;
 $slg-partial: rgba(69, 69, 69, 0.4);
@@ -31,7 +36,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 20% 100%;
 	background-attachment: fixed;
-	font-family: 'Product Sans', Lato, Arial, sans-serif !important;
+	font-family: Product Sans, Arial, sans-serif !important;
 	line-height: 1.43;
 	margin: 0;
 	overflow-y: scroll;
@@ -59,7 +64,7 @@ body {
 
 .link-disguise:hover {
 	text-decoration: underline;
-	text-decoration-color: #454545;
+	text-decoration-color: $color-primary;
 }
 
 .relative {
@@ -95,7 +100,7 @@ body {
 
 	#background {
 		padding: 10px 20px;
-		font-family: Lato, 'Product Sans', Arial, sans-serif;
+		font-family: Product Sans, Arial, sans-serif;
 
 		hr {
 			margin-top: 20px;
@@ -209,7 +214,7 @@ body {
 	&-wrapper {
 		background-color: #fefefe;
 		border-radius: 0.55rem;
-		@include stripe-box-shadow;
+		box-shadow: 5px 8px 0px -1px saturate(transparentize($color-primary, 0.2), 30);
 	}
 	
 	&-nested {
@@ -274,7 +279,6 @@ body {
 }
 
 #name {
-	font-family: "Lato";
 	font-weight: 700;
 	font-style: normal;
 	font-size: 225%;
@@ -291,10 +295,9 @@ body {
 }
 
 .contact-details {
-	margin-top: 1em;
+	margin-top: 2rem;
 	padding: 10px;
 	text-align: left;
-	font-family: Lato;
 	font-size: 14px;
 	line-height: 20px;
 	color: rgb(51, 51, 51);
@@ -318,14 +321,14 @@ body {
 .detail-info {
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 0.9em;
 	padding-right: 10px;
 }
 
-.detail-info,
-#background {
+.detail-info, #background {
 	a:hover {
 		background-color: #CCC;
+		text-decoration: underline;
+		text-decoration-color: $color-primary;
 	}
 }
 
@@ -368,7 +371,6 @@ body {
 
 #calendar {
 	padding: 30px;
-	font-family: Lato;
 }
 
 .tab-content>div {
@@ -436,7 +438,6 @@ body {
 		display: block;
 		position: relative;
 		padding: 40px;
-		font-family: Lato;
 		float: inherit;
 		margin: 10px;
 		box-sizing: content-box;

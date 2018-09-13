@@ -6,6 +6,10 @@
   font-family: Circular;
   src: url("fonts/circular-book.otf"); }
 
+@font-face {
+  font-family: Product Sans;
+  src: url("https://fonts.googleapis.com/css?family=Product+Sans%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i"); }
+
 a {
   text-decoration: none; }
 
@@ -17,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position: 20% 100%;
   background-attachment: fixed;
-  font-family: 'Product Sans', Lato, Arial, sans-serif !important;
+  font-family: Product Sans, Arial, sans-serif !important;
   line-height: 1.43;
   margin: 0;
   overflow-y: scroll; }
@@ -41,7 +45,7 @@ body {
 
 .link-disguise:hover {
   text-decoration: underline;
-  text-decoration-color: #454545; }
+  text-decoration-color: #8886c0; }
 
 .relative {
   position: relative; }
@@ -70,7 +74,7 @@ body {
   margin: 1em 1em 1em calc(25vw + 1em); }
   #rightWrapper #background {
     padding: 10px 20px;
-    font-family: Lato, 'Product Sans', Arial, sans-serif; }
+    font-family: Product Sans, Arial, sans-serif; }
     #rightWrapper #background hr {
       margin-top: 20px;
       margin-bottom: 20px; }
@@ -145,7 +149,7 @@ body {
   .card-wrapper {
     background-color: #fefefe;
     border-radius: 0.55rem;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
+    box-shadow: 5px 8px 0px -1px rgba(110, 106, 219, 0.8); }
   .card-nested {
     min-height: 0;
     margin-bottom: 10px;
@@ -198,7 +202,6 @@ body {
   vertical-align: -0.12em; }
 
 #name {
-  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
   font-size: 225%;
@@ -213,10 +216,9 @@ body {
   margin-bottom: 13px; }
 
 .contact-details {
-  margin-top: 1em;
+  margin-top: 2rem;
   padding: 10px;
   text-align: left;
-  font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   color: #333333; }
@@ -237,12 +239,12 @@ body {
 .detail-info {
   display: table-cell;
   vertical-align: middle;
-  font-size: 0.9em;
   padding-right: 10px; }
 
-.detail-info a:hover,
-#background a:hover {
-  background-color: #CCC; }
+.detail-info a:hover, #background a:hover {
+  background-color: #CCC;
+  text-decoration: underline;
+  text-decoration-color: #8886c0; }
 
 .social-links {
   display: flex;
@@ -269,8 +271,7 @@ body {
       color: #005983; }
 
 #calendar {
-  padding: 30px;
-  font-family: Lato; }
+  padding: 30px; }
 
 .tab-content > div {
   width: 100%;
@@ -323,7 +324,6 @@ body {
     display: block;
     position: relative;
     padding: 40px;
-    font-family: Lato;
     float: inherit;
     margin: 10px;
     box-sizing: content-box; }
