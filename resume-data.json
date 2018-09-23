@@ -10,6 +10,7 @@
         "github": "jgibson02",
         "linkedin": "jgibson02",
         "medium": "jgibson02",
+        "codepen": "jgibson02",
         "position": "Computer Science Student",
         "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
     },
@@ -34,6 +35,22 @@
     ],
 
     "experience": [
+        {
+            "title": "Applications Development Intern",
+            "institution": "Qurate Retail Group",
+            "location": "West Chester, Pennsylvania",
+            "date-range": "Jun. 2018 - Aug. 2018",
+            "span": "3 months",
+            "active": false,
+            "list-items": [
+                "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+                "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+                "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+                "Built the MDM web application, first in React, then ported to Angular 6.",
+                "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+            ],
+            "website": "https://www.qurateretailgroup.com/"
+        },
         {
             "title": "Software Engineering Intern",
             "institution": "NASA Langley Research Center",

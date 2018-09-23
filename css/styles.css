@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position: 20% 100%;
   background-attachment: fixed;
-  font-family: Product Sans, Arial, sans-serif !important;
+  font-family: 'Product Sans', 'Roboto', sans-serif !important;
   line-height: 1.43;
   margin: 0;
   overflow-y: scroll; }
@@ -78,26 +78,33 @@ body {
     #rightWrapper #background hr {
       margin-top: 20px;
       margin-bottom: 20px; }
-    #rightWrapper #background #background-details .detail {
-      display: table;
-      padding: 10px 0; }
-      #rightWrapper #background #background-details .detail .title {
-        color: #707070; }
-      #rightWrapper #background #background-details .detail .info {
-        display: table-cell;
-        padding: 0 10px;
-        width: 100%; }
-      #rightWrapper #background #background-details .detail .icon {
-        display: table-cell;
-        padding: 0 10px;
-        color: #707070;
-        min-width: 45px;
-        max-width: 45px;
-        text-align: center; }
-        #rightWrapper #background #background-details .detail .icon .fs-lg {
-          font-size: 1.33333333em;
-          line-height: .75em;
-          vertical-align: -15%; }
+    #rightWrapper #background #background-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 80em; }
+      #rightWrapper #background #background-details .detail {
+        display: table;
+        padding: 10px 0;
+        min-width: 50%;
+        max-width: 44em; }
+        #rightWrapper #background #background-details .detail .title {
+          color: #707070; }
+        #rightWrapper #background #background-details .detail .info {
+          display: table-cell;
+          padding: 0 10px;
+          width: 100%; }
+        #rightWrapper #background #background-details .detail .icon {
+          display: table-cell;
+          padding: 0 10px;
+          color: #707070;
+          min-width: 45px;
+          max-width: 45px;
+          text-align: center; }
+          #rightWrapper #background #background-details .detail .icon .fs-lg {
+            font-size: 1.33333333em;
+            line-height: .75em;
+            vertical-align: -15%; }
     #rightWrapper #background .skills table tr td {
       vertical-align: top;
       padding: 0.5em 0;
