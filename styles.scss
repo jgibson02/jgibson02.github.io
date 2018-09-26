@@ -108,16 +108,11 @@ body {
 		}
 
 		#background-details {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			max-height: 80em;
+			column-width: 44em;
 			
 			.detail {
 				display: table;
 				padding: 10px 0;
-				min-width: 50%;
-				max-width: 44em;
 	
 				.title {
 					color: #707070;

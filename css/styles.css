@@ -79,15 +79,10 @@ body {
       margin-top: 20px;
       margin-bottom: 20px; }
     #rightWrapper #background #background-details {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      max-height: 80em; }
+      column-width: 44em; }
       #rightWrapper #background #background-details .detail {
         display: table;
-        padding: 10px 0;
-        min-width: 50%;
-        max-width: 44em; }
+        padding: 10px 0; }
         #rightWrapper #background #background-details .detail .title {
           color: #707070; }
         #rightWrapper #background #background-details .detail .info {
