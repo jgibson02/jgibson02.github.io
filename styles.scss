@@ -39,7 +39,6 @@ body {
 	font-family: 'Product Sans', 'Roboto', sans-serif !important;
 	line-height: 1.43;
 	margin: 0;
-	overflow-y: scroll;
 }
 
 #leftWrapper hr {
@@ -65,22 +64,6 @@ body {
 .link-disguise:hover {
 	text-decoration: underline;
 	text-decoration-color: $color-primary;
-}
-
-.relative {
-	position: relative;
-}
-
-.clear-margin {
-	margin: 0;
-}
-
-.mr-5 {
-	margin-right: 5px;
-}
-
-.mr-10 {
-	margin-right: 10px;
 }
 
 #leftWrapper {
@@ -112,7 +95,7 @@ body {
 			
 			.detail {
 				display: table;
-				padding: 10px 0;
+				padding: 0;
 	
 				.title {
 					color: #707070;
@@ -137,6 +120,10 @@ body {
 						line-height: .75em;
 						vertical-align: -15%;
 					}
+				}
+				
+				.list-unstyled {
+					margin-bottom: 0;
 				}
 			}
 		}
