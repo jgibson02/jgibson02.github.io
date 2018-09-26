@@ -104,7 +104,8 @@ body {
       vertical-align: top;
       padding: 0.5em 0;
       line-height: 2em; }
-      #rightWrapper #background .skills table tr td:first-child {
+      #rightWrapper #background .skills table tr td.skills__heading {
+        line-height: 1em;
         text-align: right;
         font-weight: bold;
         font-size: 1em;

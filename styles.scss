@@ -148,7 +148,8 @@ body {
 					padding: 0.5em 0;
 					line-height: 2em;
 
-					&:first-child {
+					&.skills__heading {
+						line-height: 1em;
 						text-align: right;
 						font-weight: bold;
 						font-size: 1em;
