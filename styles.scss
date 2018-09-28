@@ -91,7 +91,7 @@ body {
 		}
 
 		#background-details {
-			column-width: 44em;
+			columns: 44em 2;
 			
 			.detail {
 				display: table;
@@ -227,15 +227,16 @@ body {
 	}
 }
 
+.icon-clock {
+	margin-right: 5px;
+}
+
 .current-event {
 	background: #5ACE24;
-	position: absolute;
-	top: 0.52em;
-	left: -13px;
-	height: 5pt;
-	width: 5pt;
+	position: relative;
+	height: 5px;
+	width: 5px;
 	box-shadow: 0 0 0 #5ACE24;
-	content: '"' '"';
 	border-radius: 50%;
 	animation: current-event 2s infinite;
 }
