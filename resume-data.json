@@ -130,7 +130,8 @@
         {
             "heading": "Interpreted Languages",
             "list-items": [
-                "JavaScript (ES6)",
+                "JavaScript (ES6+)",
+                "TypeScript",
                 "Python"
             ]
         },
@@ -138,8 +139,9 @@
             "heading": "Platforms",
             "list-items": [
                 "React.js",
-                "jQuery",
+                "Angular6",
                 "Node.js",
+                "jQuery",
                 "Express.js",
                 "Bootstrap",
                 "Webpack/Gulp+Browserify"
@@ -159,9 +161,10 @@
             "heading": "Other",
             "list-items": [
                 "Git",
-                "Assembly (x86 Intel, MIPS)",
+                "Progressive Web Apps (PWAs)",
                 "LaTeX",
-                "HTML5&CSS3"
+                "HTML5&CSS3",
+                "ArcGIS"
             ]
         }
     ],
