@@ -99,7 +99,8 @@ body {
         font-weight: bold;
         font-size: 1em;
         padding-right: 0.8em;
-        min-width: 11em; }
+        min-width: 11em;
+        vertical-align: middle; }
     #rightWrapper #background .skills table tr:not(:first-child) {
       border-top: 1px solid rgba(0, 0, 0, 0.05); }
     #rightWrapper #background .skills .skills__list span {
