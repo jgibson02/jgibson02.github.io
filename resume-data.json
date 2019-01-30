@@ -5,8 +5,8 @@
         "location": "Harrisburg, Pennsylvania",
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
-        "email": "career.johngibson@gmail.com",
-        "website": "http://johngibson.me",
+        "email": "career@johngibson.me",
+        "website": "johngibson.me",
         "github": "jgibson02",
         "linkedin": "jgibson02",
         "medium": "jgibson02",
@@ -22,7 +22,7 @@
     "education": [
         {
             "study": "B.S. in Computer Science",
-            "gpa": 3.55,
+            "gpa": 3.65,
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Exp. May 2019",
@@ -31,83 +31,112 @@
                 "Dean's List: Spring 2016 - Present.",
                 "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
             ]
-        }
+        },
+        {
+          "active": true,
+          "date-range": "Winter Semester 2017-18, 2018-19",
+          "institution": "Jagiellonian University",
+          "list-items": [
+              "Coursework in International Relations, Central and Eastern European Film & Literature, European Jewish Experiences, & Post-Communist Transformations.",
+              "Served as a mentor for other students within the study abroad program & guided them through various cities."
+          ],
+          "gpa": 4.0,
+          "active": false,
+          "location": "Kraków, Poland",
+          "study": "Polish Language and Culture"
+      }
     ],
 
     "experience": [
-        {
-            "title": "Applications Development Intern",
-            "institution": "Qurate Retail Group",
-            "location": "West Chester, Pennsylvania",
-            "date-range": "Jun. 2018 - Aug. 2018",
-            "span": "3 months",
-            "active": false,
-            "list-items": [
-                "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
-                "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
-                "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
-                "Built the MDM web application, first in React, then ported to Angular 6.",
-                "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
-            ],
-            "website": "https://www.qurateretailgroup.com/"
-        },
-        {
-            "title": "Software Engineering Intern",
-            "institution": "NASA Langley Research Center",
-            "location": "Hampton, Virginia",
-            "date-range": "Jun. 2017 - Aug. 2017",
-            "span": "3 months",
-            "active": false,
-            "list-items": [
-                "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
-                "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
-                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
-                "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
-            ],
-            "website": "https://www.nasa.gov/centers/langley/home/index.html"
-        },
-        {
-            "title": "Student Living and Learning Community Mentor",
-            "institution": "Bloomsburg University of Pennsylvania",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Aug. 2016 - Present",
-            "span": "1 year, 4 months",
-            "active": true,
-            "list-items": [
-                "Supporting the academic success and wellness of freshmen in the Computer Science program.",
-                "Tutoring mentees in Computer Science and Mathematics courses.",
-                "Planning and organizing events for members of the Living and Learning Community.",
-                "Establishing server infrastructure and applications for use by LLC members.",
-                "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
-            ],
-            "website": "https://www.bloomu.edu/"
-        }
+      {
+        "active": true,
+        "date-range": "Jan. 2019 - Present",
+        "institution": "Columbia County GIS",
+        "list-items": [
+            "Completion of comprehensive GIS curriculum consisting of necessary geospatial skills.",
+            "Assisting the director of the county GIS office with current data maintenance workflows.",
+            "Examining workflows where automation can assist in improving productivity and reducing error."
+        ],
+        "location": "Bloomsburg, Pennsylvania",
+        "span": "1 month",
+        "title": "GIS Intern",
+        "website": "http://gis.columbiapa.org/"
+      },
+      {
+          "title": "Applications Development Intern",
+          "institution": "Qurate Retail Group",
+          "location": "West Chester, Pennsylvania",
+          "date-range": "Jun. 2018 - Aug. 2018",
+          "span": "3 months",
+          "active": false,
+          "list-items": [
+              "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+              "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+              "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+              "Built the MDM web application, first in React, then ported to Angular 6.",
+              "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+          ],
+          "website": "https://www.qurateretailgroup.com/"
+      },
+      {
+          "title": "Software Engineering Intern",
+          "institution": "NASA Langley Research Center",
+          "location": "Hampton, Virginia",
+          "date-range": "Jun. 2017 - Aug. 2017",
+          "span": "3 months",
+          "active": false,
+          "list-items": [
+              "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+              "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
+              "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
+              "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
+          ],
+          "website": "https://www.nasa.gov/centers/langley/home/index.html"
+      },
+      {
+          "title": "Student Living and Learning Community Mentor",
+          "institution": "Bloomsburg University of Pennsylvania",
+          "location": "Bloomsburg, Pennsylvania",
+          "date-range": "Aug. 2016 - Present",
+          "span": "3 years",
+          "active": true,
+          "list-items": [
+              "Supporting the academic success and wellness of freshmen in the Computer Science program.",
+              "Tutoring mentees in Computer Science and Mathematics courses.",
+              "Planning and organizing events for members of the Living and Learning Community.",
+              "Establishing server infrastructure and applications for use by LLC members.",
+              "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
+          ],
+          "website": "http://lc.bloomu.edu/"
+      }
     ],
 
     "extracurricular": [
-        {
-            "organization": "Assocation of Computing Machinery",
-            "role": "ACM Member/Officer",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Aug. 2015 - Present",
-            "active": true,
-            "list-items": [
-                "Vice-President, Fall/Spring 2017-2018.",
-                "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
-                "Leading a student project to construct a system of GPS trackers and cross-platform application for locating campus shuttle buses.",
-                "Competitor for BU's ACM student chapter programming competition team."
-            ]
-        },
-        {
-            "organization": "Bloomsburg University Department of Mathematics and Digital Sciences",
-            "role": "Volunteer Tutor",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Sep. 2016 - Present",
-            "active": true,
-            "list-items": [
-                "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
-            ]
-        }
+      {
+        "organization": "Assocation of Computing Machinery",
+        "role": "ACM Member/Officer",
+        "location": "Bloomsburg, Pennsylvania",
+        "date-range": "Aug. 2015 - Present",
+        "active": true,
+        "list-items": [
+            "Vice-President, Fall/Spring 2017-2018.",
+            "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
+            "Competitor for BU's ACM student chapter programming competition team.",
+            "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
+        ]
+      },
+      {
+        "organization": "PA Makerspace",
+        "role": "Volunteer/Member",
+        "location": "Phoenixville, Pennsylvania",
+        "date-range": "Jun. 2018 - Aug. 2018",
+        "active": false,
+        "list-items": [
+          "Partcipated in classes in woodworking, leatherworking, vinyl cutting, & metal casting.",
+          "Taught a course series titled 'Getting Started With Web Development'",
+          "Worked with Makerspace members to get DIY 3D printers running."
+        ]
+      }
     ],
 
     "honors": [
@@ -118,55 +147,81 @@
 
     ],
 
+    "projects": [
+      {
+        "title": "BloomBus",
+        "description": "A cross-platform real-time tracking system for Bloomsburg University campus shuttle buses.",
+        "url": "bloombus.herokuapp.com",
+        "date-range": "2016-2019",
+        "list-items": [
+          "Designed and tested various hardware and software approaches to support real-time tracking.",
+          "Created mesh networks between GPS receivers using XBee radio transmitters.",
+          "Wrote a React PWA front-end for viewing bus routes, bus stops, current bus positions & ETAs.",
+          "Wrote an Android app for buses to track its current location & upload to Firebase.",
+          "Wrote serverless functions in TypeScript for watching bus proximity to bus stops & cleaning up DB.",
+          "Coordinated with heads of facilities, transportation, and community governance management to adopt this system."
+        ]
+      },
+      {
+        "title": "TapCache",
+        "description": "An Android app for geocache style communication using NFC tags.",
+        "url": "tapcache.johngibson.me",
+        "date-range": "2018",
+        "list-items": [
+          
+        ]
+      }
+    ],
+
     "skills": [
-        {
-            "heading": "Compiled Languages",
-            "list-items": [
-                "Java (Networking, Databases, JSP/Servlets)",
-                "C",
-                "C++"
-            ]
-        },
-        {
-            "heading": "Interpreted Languages",
-            "list-items": [
-                "JavaScript (ES6+)",
-                "TypeScript",
-                "Python"
-            ]
-        },
-        {
-            "heading": "Platforms",
-            "list-items": [
-                "React.js",
-                "Angular6",
-                "Node.js",
-                "jQuery",
-                "Express.js",
-                "Bootstrap",
-                "Webpack/Gulp+Browserify"
-            ]
-        },
-        {
-            "heading": "Data",
-            "list-items": [
-                "MongoDB",
-                "SQL",
-                "Firebase",
-                "JSON",
-                "XML"
-            ]
-        },
-        {
-            "heading": "Other",
-            "list-items": [
-                "Git",
-                "Progressive Web Apps (PWAs)",
-                "LaTeX",
-                "HTML5&CSS3",
-                "ArcGIS"
-            ]
-        }
+      {
+          "heading": "Compiled Languages",
+          "list-items": [
+              "Java (Networking, Databases, JSP/Servlets)",
+              "C",
+              "C++"
+          ]
+      },
+      {
+          "heading": "Interpreted Languages",
+          "list-items": [
+              "JavaScript (ES6+)",
+              "TypeScript",
+              "Python"
+          ]
+      },
+      {
+          "heading": "Platforms",
+          "list-items": [
+              "React.js",
+              "Angular6",
+              "Node.js",
+              "jQuery",
+              "Express.js",
+              "Bootstrap",
+              "Webpack/Gulp+Browserify"
+          ]
+      },
+      {
+        "heading": "Data",
+        "list-items": [
+            "MongoDB",
+            "SQL",
+            "Firebase",
+            "JSON",
+            "XML"
+        ]
+      },
+      {
+        "heading": "Other",
+        "list-items": [
+          "Git",
+          "Progressive Web Apps (PWAs)",
+          "LaTeX",
+          "HTML5&CSS3",
+          "ArcGIS (ArcMap 10.6 & Pro)"
+        ]
+      }
     ],
 
     "writing": [
