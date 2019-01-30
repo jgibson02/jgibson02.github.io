@@ -175,41 +175,43 @@
 
     "skills": [
       {
-          "heading": "Compiled Languages",
-          "list-items": [
-              "Java (Networking, Databases, JSP/Servlets)",
-              "C",
-              "C++"
-          ]
-      },
-      {
-          "heading": "Interpreted Languages",
-          "list-items": [
-              "JavaScript (ES6+)",
-              "TypeScript",
-              "Python"
-          ]
-      },
-      {
-          "heading": "Platforms",
-          "list-items": [
-              "React.js",
-              "Angular6",
-              "Node.js",
-              "jQuery",
-              "Express.js",
-              "Bootstrap",
-              "Webpack/Gulp+Browserify"
-          ]
-      },
-      {
-        "heading": "Data",
+        "heading": "Interpreted Languages",
         "list-items": [
-            "MongoDB",
-            "SQL",
-            "Firebase",
-            "JSON",
-            "XML"
+          "JavaScript (ES6+)",
+          "TypeScript",
+          "Python"
+        ]
+      },
+      {
+        "heading": "Compiled Languages",
+        "list-items": [
+          "Java (Networking, Databases, JSP/Servlets)",
+          "C",
+          "C++"
+        ]
+      },
+      {
+        "heading": "Platforms",
+        "list-items": [
+            "React",
+            "Angular6",
+            "Node.js",
+            "jQuery",
+            "Express.js",
+            "Bootstrap",
+            "Webpack/Gulp+Browserify"
+        ]
+      },
+      {
+        "heading": "Cloud & Data",
+        "list-items": [
+          "Firebase",
+          "Google Cloud Platform (GCN)",
+          "Amazon Web Services (AWS)",
+          "MongoDB",
+          "SQL",
+          "JSON",
+          "XML"
         ]
       },
       {
@@ -217,9 +219,10 @@
         "list-items": [
           "Git",
           "Progressive Web Apps (PWAs)",
-          "LaTeX",
           "HTML5&CSS3",
-          "ArcGIS (ArcMap 10.6 & Pro)"
+          "ArcGIS (ArcMap 10.6 & Pro)",
+          "Android Development",
+          "LaTeX"
         ]
       }
     ],
