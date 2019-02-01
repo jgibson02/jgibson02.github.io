@@ -153,6 +153,7 @@
         "description": "A cross-platform real-time tracking system for Bloomsburg University campus shuttle buses.",
         "url": "bloombus.herokuapp.com",
         "date-range": "2016-2019",
+        "active": true,
         "list-items": [
           "Designed and tested various hardware and software approaches to support real-time tracking.",
           "Created mesh networks between GPS receivers using XBee radio transmitters.",
